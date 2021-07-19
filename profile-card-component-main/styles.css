@@ -1,0 +1,107 @@
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+    font-size: 62.5%;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./image/bg-pattern-top.svg), url(./image/bg-pattern-bottom.svg);
+    background-position: bottom 45vh right 50vw, top 45vh left 50vw;
+    background-repeat: no-repeat;
+    background-color: hsl(185, 75%, 39%);
+}
+
+.profile-preview-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(./images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-color: white;
+    width: 32rem;
+    height: 38rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.profile-preview-picture {
+    border-radius: 50%;
+    border: 0.5rem solid white;
+    position: relative;
+    top: 0.5rem;
+}
+
+.profile-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid 	rgb(220,220,220);
+    width: 32rem;
+    line-height: 2rem;
+    position: relative;
+    top: 6rem;
+    padding-top: 3rem;
+}
+
+h1 {
+    position: relative;
+    top: 2rem;
+    font-size: 1.8rem;
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+}
+
+.age {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+
+.location {
+    position: relative;
+    top: 3rem;
+    font-size: 1.5rem;
+}
+
+.profile-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid 	rgb(220,220,220);
+    width: 32rem;
+    line-height: 2rem;
+    position: relative;
+    top: 6rem;
+    padding-top: 3rem;
+}
+
+.stats-followers, .stats-likes, .stats-photos {
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.followers, .likes, .photos {
+    color: hsl(227, 10%, 46%);
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+p {
+    color: hsl(227, 10%, 46%);
+    font-size: 1.5rem;
+}
